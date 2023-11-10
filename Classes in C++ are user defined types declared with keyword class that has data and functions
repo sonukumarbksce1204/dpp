@@ -1,0 +1,32 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+class details{
+  private:
+    int n;
+    string fn;
+    string ln;
+    int age;
+  public:
+    void get(){
+        cin>>n>>fn>>ln>>age;
+    }
+    void put1(){
+        cout<<n<<endl<<ln<<", "<<fn<<endl<<age<<endl;
+    }
+    void put(){
+        cout<<endl<<n<<","<<fn<<","<<ln<<","<<age;
+    }
+};
+
+int main() {
+     details d;
+     d.get();
+     d.put1();
+     d.put();
+    return 0;
+}
