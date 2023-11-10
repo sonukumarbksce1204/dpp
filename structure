@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+struct newt{
+  int n;
+  string fn;
+  string ln;
+  int x; 
+  void get(){
+      cin>>n>>fn>>ln>>x;
+  }
+  void dis(){
+      cout<<n<<" "<<fn<<" "<<ln<<" "<<x;
+  }
+};
+int main() {
+    newt x;
+    x.get();
+    x.dis();     
+    return 0;
+}
