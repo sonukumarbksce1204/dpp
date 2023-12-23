@@ -1,0 +1,15 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int nof=(n*2000)/500;
+		System.out.println(nof);
+
+	}
+}
