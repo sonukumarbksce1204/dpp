@@ -1,0 +1,16 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int m=input.nextInt();
+		int a=input.nextInt();
+		int o=input.nextInt();
+		System.out.println((o+a)<=m?"Yes":"No");
+
+	}
+}
