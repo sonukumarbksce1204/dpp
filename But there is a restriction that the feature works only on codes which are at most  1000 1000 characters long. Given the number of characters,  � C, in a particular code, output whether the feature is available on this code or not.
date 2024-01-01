@@ -1,0 +1,13 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int v=input.nextInt();
+		System.out.println(v<=1000?"YES":"NO");
+	}
+}
