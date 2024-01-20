@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	    int t;
+	    cin>>t;
+	    int arr[t];
+	    int ev=0,odd=0;
+	    for(int i=0;i<t;i++){
+	        cin>>arr[i];
+	        if(arr[i]%2==0){
+	            ev++;
+	        }
+	        else{
+	            odd++;
+	        }
+	    }
+	    cout<<((ev>odd)?"READY FOR BATTLE":"NOT READY");
+	    
+	
+
+}
