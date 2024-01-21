@@ -1,0 +1,19 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    int x=input.nextInt();
+		    int y=input.nextInt();
+		    int z=input.nextInt();
+		    System.out.println(((x==0&&z==0)||(x==0&&y==0)||(y==0&&z==0))?"Water filling time":"Not now");
+		}
+
+	}
+}
