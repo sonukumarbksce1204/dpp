@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    double l=input.nextDouble();
+		    double p=input.nextDouble();
+		    System.out.println(((p/l)*100.0)>=75?"YES":"NO");
+		}
+
+	}
+}
