@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        while(n-- >0){
+            int a1=input.nextInt();
+            int a2=input.nextInt();
+            int a3=input.nextInt();
+            int a4=input.nextInt();
+            int a5=input.nextInt();
+            int f=0;
+            if(a1==1)f++;
+            if(a2==1)f++;
+            if(a3==1)f++;
+            if(a4==1)f++;
+            if(a5==1)f++;
+            System.out.println(f>=4?"YES":"NO");
+        }
+	}
+}
