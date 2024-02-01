@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    int rever(int n){
+	    int rev=0;
+	    while(n>0){
+	        rev=rev*10+n%10;
+	        n/=10;
+	    }
+	    return rev;
+	
+    }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    int x=input.nextInt();
+		    Codechef obj=new Codechef();
+		    int rev=obj.rever(x);
+		    System.out.println(rev);
+		}
+		    
+	}
+	
+}
