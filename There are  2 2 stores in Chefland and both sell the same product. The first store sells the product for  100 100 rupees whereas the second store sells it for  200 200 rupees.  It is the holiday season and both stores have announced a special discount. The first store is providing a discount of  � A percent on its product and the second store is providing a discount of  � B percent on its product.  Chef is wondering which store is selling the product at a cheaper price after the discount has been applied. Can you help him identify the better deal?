@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    double x=input.nextInt();
+		    double y=input.nextInt();
+		    double fx=Math.round(100-(100*(x/100.0)));
+		    double fy=Math.round(200-(200*(y/100.0)));
+		    //System.out.println(fx+" "+fy);
+		    
+		    
+		    if(fx<fy){
+		        System.out.println("FIRST");
+		    }
+		    else if(fx==fy){
+		        System.out.println("BOTH");
+		    }
+		    else{
+		        System.out.println("SECOND");
+		    }
+		    
+		}
+
+	}
+}
