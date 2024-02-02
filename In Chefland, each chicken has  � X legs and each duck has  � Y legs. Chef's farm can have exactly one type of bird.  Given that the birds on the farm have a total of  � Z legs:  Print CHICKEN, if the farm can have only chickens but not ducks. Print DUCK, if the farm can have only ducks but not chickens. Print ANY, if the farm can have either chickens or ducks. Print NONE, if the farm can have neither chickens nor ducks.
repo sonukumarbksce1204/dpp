@@ -1,0 +1,30 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    int x=input.nextInt();
+		    int y=input.nextInt();
+		    int z=input.nextInt();
+		    if(z%x==0&&z%y!=0){
+		        System.out.println("CHICKEN");
+		    }
+		    else if(z%y==0&&z%x!=0){
+		        System.out.println("DUCK");
+		    }
+		    else if(z%x==0&&z%y==0){
+		        System.out.println("ANY");
+		    }
+		    else{
+		        System.out.println("NONE");
+		    }
+		}
+
+	}
+}
