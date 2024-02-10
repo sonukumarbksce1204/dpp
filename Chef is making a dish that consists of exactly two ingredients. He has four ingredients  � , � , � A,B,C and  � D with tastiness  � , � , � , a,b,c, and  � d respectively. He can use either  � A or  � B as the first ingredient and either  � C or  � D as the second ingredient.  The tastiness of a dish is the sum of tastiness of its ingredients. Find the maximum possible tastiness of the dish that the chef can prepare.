@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    int a=input.nextInt();
+		    int b=input.nextInt();
+		    int c=input.nextInt();
+		    int d=input.nextInt();
+		    int sum=Math.max(a,b)+Math.max(c,d);
+		    System.out.println(sum);
+		}
+
+	}
+}
