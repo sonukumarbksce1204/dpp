@@ -1,0 +1,30 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    int x=input.nextInt();
+		    int y=input.nextInt();
+		    int f=1,v=x+y;
+		    int val=(int)(Math.sqrt(v));
+		    for(int i=2;i<=val;i++){
+		        if(v%i==0){
+		            f++;
+		        }
+		    }
+		    if(f==1){
+		        System.out.println("Alice");
+		    }
+		    else{
+		        System.out.println("Bob");
+		    }
+		}
+
+	}
+}
