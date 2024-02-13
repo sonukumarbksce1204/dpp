@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		while(n-- >0){
+		    int i=input.nextInt();
+		    int[] arr=new int[i];
+		    for(int j=0;j<i;j++){
+		        arr[j]=input.nextInt();
+		    }
+		    Arrays.sort(arr);
+		    System.out.println(arr[i-1]);
+		}
+
+	}
+}
