@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int i=1;
+		while(n-- >0){
+		    int v=input.nextInt();
+		    if(v%3==2){
+		        System.out.println("SMALL");
+		    }
+		    else if(v%3==1){
+		        System.out.println("HUGE");
+		    }
+		    else{
+		        System.out.println("NORMAL");
+		    }
+		}
+
+	}
+}
