@@ -1,0 +1,22 @@
+import java.util.*;
+import java.math.BigInteger;
+
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt(); 
+        while (n-- > 0) { 
+            int t = input.nextInt(); 
+            BigInteger fact = factorial(t);
+            System.out.println(fact); 
+        }
+    }
+
+    static BigInteger factorial(int n) {
+        BigInteger result = BigInteger.ONE;
+        for (int i = 2; i <= n; i++) {
+            result = result.multiply(BigInteger.valueOf(i));
+        }
+        return result;
+    }
+}
