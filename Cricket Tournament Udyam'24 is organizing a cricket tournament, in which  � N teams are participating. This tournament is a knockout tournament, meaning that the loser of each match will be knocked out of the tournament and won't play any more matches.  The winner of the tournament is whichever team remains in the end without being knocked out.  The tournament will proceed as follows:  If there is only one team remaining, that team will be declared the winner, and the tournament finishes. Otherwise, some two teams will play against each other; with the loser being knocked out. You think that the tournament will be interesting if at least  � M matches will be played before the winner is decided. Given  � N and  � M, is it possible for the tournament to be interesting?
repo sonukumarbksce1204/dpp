@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		 Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt(); // Number of test cases
+
+        while (t-- > 0) {
+            int n = scanner.nextInt(); // Number of teams
+            int m = scanner.nextInt(); // Minimum number of matches for an interesting tournament
+
+            if (canBeInteresting(n, m)) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+    }
+
+    // Function to check if the tournament can be interesting
+    public static boolean canBeInteresting(int n, int m) {
+       
+        return m <= (n - 1);
+	}
+}
